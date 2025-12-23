@@ -1,38 +1,37 @@
-backend/
-│
-├── config/
-│ └── db.js # MongoDB connection setup
-│
-├── controllers/
-│ └── userController.js # Example controller for CRUD operations
-│
-├── models/
-│ └── userModel.js # Mongoose schema
-│
-├── routes/
-│ └── userRoutes.js # Express routes
-│
-├── .env # Environment variables
-├── .gitignore
-├── package.json
-├── server.js # Entry point of the application
-└── README.md
+# Notice Management System – Backend
 
-node -v
-npm -v
+## 🛠 Tech Stack
 
-mkdir backend
-cd backend
-npm init -y
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- **Mongoose**
+- **dotenv**
+- **CORS**
 
-npm install express mongoose dotenv
+---
 
-npm install --save-dev nodemon
+## ⚙️ Installation & Run
 
-"scripts": {
-"start": "node server.js",
-"dev": "nodemon server.js"
-}
+Clone the repository and install dependencies:
 
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
+```bash
+git clone <repository-url>
+cd Nebs-IT-backend
+npm install
+npm run dev
+
+Server will run on:
+http://localhost:5000
+
+
+⚡ Functionalities
+
+Create notices (Published or Draft)
+Save notice data in MongoDB
+Fetch all notices with pagination
+Search notices by employee name
+Filter notices by status (Published / Unpublished / Draft)
+Update notice publish & unpublish status
+View single notice details
+```
